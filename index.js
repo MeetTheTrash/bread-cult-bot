@@ -5,7 +5,7 @@ const PREFIX = "-";
 
 let images = ["./images/bread.png", "./images/bread1.png", "./images/bread2.png", "./images/bread3.png", "./images/bread4.png", "./images/bread5.png"];
 
-let worship = ["All hail Yeastia", "Yeastia is Yes"];
+let worship = ["All hail Yestia", "Yestia is Yes"];
 
 client.on("ready", () => {
     console.log("Logged in!");
