@@ -20,7 +20,7 @@ client.on("ready", () => {
 
 client.on("message", event => {
     if (event.content.toLowerCase() === "toast") {
-        event.reply("Please refrain from sinning!")'
+        event.reply("Please refrain from sinning!");
     }
      
     if (!event.content.startsWith(PREFIX)) return;
