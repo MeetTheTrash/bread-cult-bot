@@ -11,7 +11,7 @@ client.on("ready", () => {
     console.log("Logged in!");
     client.user.setPresence ({ 
         activity: { 
-            name: 'Bread' 
+            name: 'Bread (-help)' 
         }, 
         status: 'online' 
     });
@@ -46,6 +46,8 @@ client.on("message", event => {
             rules.addField("11. No bot commands in general", "Keep general for conversations", false);
             rules.addField("12. Keep things in their respective channels", "They were made for a reason");
             rules.addField("13. Listen to the fuckin staff team", "Do it", false);
+            rules.addField("14. If you have questions ping or DM sp0oky or Bread Lover", "If neither are online chack if Joker, A Baker, or TradingBooch12 is online and do the same", false);
+
             rules.setColor(0xffcf4d);
 
             event.channel.send(rules);
@@ -55,8 +57,9 @@ client.on("message", event => {
             const info = new Discord.MessageEmbed();
 
             info.setTitle("Bread Cult Bot Info");
-            info.addField("Made by: ", "TradingBooch12 and Meet_TheTrash", false);
-            info.setDescription("I was sent by Yeastia");
+            info.addField("Made by: ", "TradingBooch12 and sp0oky", false);
+            info.addField("Version ", "1.2", false);
+            info.setDescription("I was sent by Yestia");
             info.setColor(0xffcf4d);
 
             event.channel.send(info);
