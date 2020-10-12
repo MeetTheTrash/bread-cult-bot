@@ -5,7 +5,7 @@ const PREFIX = "-";
 
 let images = ["./images/bread.png", "./images/bread1.png", "./images/bread2.png", "./images/bread3.png", "./images/bread4.png", "./images/bread5.png"];
 
-let worship = ["All hail Yeastia"];
+let worship = ["All hail Yeastia", "Yeastia is Yes"];
 
 client.on("ready", () => {
     console.log("Logged in!");
@@ -19,6 +19,10 @@ client.on("ready", () => {
   
 
 client.on("message", event => {
+    if (event.content.toLowerCase() === "toast") {
+        event.reply("Please refrain from sinning!")'
+    }
+     
     if (!event.content.startsWith(PREFIX)) return;
 
     let args = event.content.substring(PREFIX.length).toLowerCase().split(" ");
@@ -77,4 +81,4 @@ client.on("message", event => {
     }
 });
 
-client.login(no);
+client.login(process.env.TOKEN);
